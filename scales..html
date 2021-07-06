@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Scale Enquirer</title>
+	<link rel="stylesheet" type="text/css" href="scales.css">
+	<script type="text/javascript" src="scales.js"></script>	
+</head>
+<body>
+	<h1>Scale Enquirer</h1>
+	<div id="container">
+		<br>
+		<div id="fretboardDiv">
+			<canvas id="fretBoard"></canvas>
+		</div>
+		<br>
+		<div id="scaleText">C Major</div>
+		<div id="scaleBox">
+			<table>
+				<tr id="degree">
+					<td id="degree1">R</td>
+					<td id="degree2">2</td>
+					<td id="degree3">b3</td>
+					<td id="degree4">#4</td>
+					<td id="degree5">5</td>
+					<td id="degree6">b6</td>
+					<td id="degree7">b7</td>
+				</tr>
+				<tr id="note">
+					<td id="note1">C##</td>
+					<td id="note2">D</td>
+					<td id="note3">E#</td>
+					<td id="note4">F</td>
+					<td id="note5">Gbb</td>
+					<td id="note6">C</td>
+					<td id="note7">H</td>
+				</tr>
+				<tr id="showDegree">
+					<td><input type="checkbox"  onclick="showNoteCheck(0)" class="degCheck"></td>
+					<td><input type="checkbox"  onclick="showNoteCheck(1)" class="degCheck"></td>
+					<td><input type="checkbox"  onclick="showNoteCheck(2)" class="degCheck"></td>
+					<td><input type="checkbox"  onclick="showNoteCheck(3)" class="degCheck"></td>
+					<td><input type="checkbox"  onclick="showNoteCheck(4)" class="degCheck"></td>
+					<td><input type="checkbox"  onclick="showNoteCheck(5)" class="degCheck"></td>
+					<td><input type="checkbox"  onclick="showNoteCheck(6)" class="degCheck"></td>
+				</tr>
+			</table>
+		</div>            <!--- scaleBox -->
+		<br>
+		<div id="keySelDiv">
+			<p class="sectionHeader">Select a key</p>
+			<div class="keyGroup">
+				<p class="keyLetter" onclick="setMode('Root','C')">C</p>
+				<p class="acc" onclick="setMode('Root','C#')">#</p>
+			</div>
+			<div class="keyGroup">
+				<p class="acc" onclick="setMode('Root','Db')">b</p>
+				<p class="keyLetter" onclick="setMode('Root','D')">D</p>
+				<p class="acc" onclick="setMode('Root','D#')">#</p>
+			</div>
+			<div class="keyGroup">
+				<p class="acc" onclick="setMode('Root','Eb')">b</p>
+				<p class="keyLetter" onclick="setMode('Root','E')">E</p>
+			</div>
+			<div class="keyGroup">
+				<p class="keyLetter" onclick="setMode('Root','F')">F</p>
+				<p class="acc" onclick="setMode('Root','F#')">#</p>
+			</div>
+			<div class="keyGroup">
+				<p class="acc" onclick="setMode('Root','Gb')">b</p>
+				<p class="keyLetter" onclick="setMode('Root','G')">G</p>
+				<p class="acc" onclick="setMode('Root','G#')">#</p>
+			</div>
+			<div class="keyGroup">
+				<p class="acc" onclick="setMode('Root','Ab')">b</p>
+				<p class="keyLetter" onclick="setMode('Root','A')">A</p>
+				<p class="acc" onclick="setMode('Root','A#')">#</p>
+			</div>
+			<div class="keyGroup">
+				<p class="acc" onclick="setMode('Root','Bb')">b</p>
+				<p class="keyLetter" onclick="setMode('Root','B')">B</p>
+			</div>
+		</div>  <!-- keySelDiv -->
+		<br>
+		<div id="modeSelDiv">
+			<p class="sectionHeader">Select a scale type/mode</p>
+			<div id="modeDiv1">
+				<p class="mode" onclick="setMode('Mode','Major')">Major</p>
+				<p class="mode" onclick="setMode('Mode','Natural Minor')">Natural Minor</p>
+				<p class="mode" onclick="setMode('Mode','Harmonic Minor')">Harmonic Minor</p>
+				<p class="mode" onclick="setMode('Mode','Melodic Minor')">Melodic Minor</p>
+			</div>
+			<div id="modeDiv2">
+				<p class="mode" onclick="setMode('Mode','Ionian')">Ionian</p>
+				<p class="mode" onclick="setMode('Mode','Dorian')">Dorian</p>
+				<p class="mode" onclick="setMode('Mode','Phrygian')">Phrygian</p>
+				<p class="mode" onclick="setMode('Mode','Lydian')">Lydian</p>
+				<p class="mode" onclick="setMode('Mode','Mixolydian')">Mixolydian</p>
+				<p class="mode" onclick="setMode('Mode','Aeolian')">Aeolian</p>
+				<p class="mode" onclick="setMode('Mode','Locrian')">Locrian</p>
+			</div>
+		</div> <!-- modeDiv -->
+		<br>
+		<div id="infoBox1">...</div>
+		<div id="infoBox2">...</div>
+		<div id="infoBox3">...</div>
+		<div id="infoBox4">...</div>
+		<p id="footnote">Note: these are only suggestions; you can do whatever the hell you want.</p>
+	</div> 
+	<br>
+	<p>1.05</p>
+</body>
+</html>
