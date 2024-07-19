@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Fretboard Trainer</title>
+        <link rel="stylesheet" type="text/css" href="fretNotes.css">
+        <script type="text/javascript" src="fretNotes.js"></script>
+    </head>
+<body>
+    <h1>Fretboard Trainer</h1>
+    <div id="container">
+        <br>
+        <div id="fretboardDiv">
+            <canvas id="fretBoard" width="800" height="170">
+        </div>
+        <br>
+        <br>
+         <div id="clefDiv">
+            <canvas id="clef" width="800" height="330">
+        </div>
+        <div id="checkDiv">
+            <input type="checkbox" id="showName" onclick="showNoteCheck()">
+            <label for="showName">Show note names</label>
+        </div>
+        <div id="button" onclick="randNote()">Next!</div>
+    </div>
+    <br>
+</body>
+</html>

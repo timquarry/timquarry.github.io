@@ -1,0 +1,54 @@
+br {
+	clear: both;
+}
+
+body {
+	background-color: #74A1B5;
+}
+
+h1 {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #555555;
+	text-align: center;
+	font-size: medium;
+}
+
+.sectionHeader {
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: left;
+	width: 800px;
+	margin: auto;
+}
+	
+#container {
+	background-color: #7CC5E4;
+	width: 960px;
+	height: 635px;
+	margin: auto;
+}
+
+#fretboardDiv {
+	background-color: #7CC5E4;
+	width: 800px;
+	height: 170px;
+	margin: auto;
+}
+
+#clefDiv {
+	width: 800px;
+	margin: auto;
+}
+
+#checkDiv {
+	float: right;
+	margin-right: 80px;
+}
+
+#button {
+	text-align: center;
+	background-color: #7CC5E4;
+	width: 100px;
+	border-style: outset;
+	border-color: #7CC5E4;
+	margin: auto;
+}
